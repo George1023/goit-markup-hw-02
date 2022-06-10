@@ -33,6 +33,12 @@ ul li {
 
 /*--------------------*/
 
+:root {
+  --primary-color: #212121;
+  --secondary-color: #757575;
+  --brand-color: #2196f3;
+}
+
 body {
   background: #e5e5e5;
 }
@@ -44,6 +50,7 @@ header {
 }
 
 .container-header {
+  padding: 25px 215px;
   background: #fff;
   max-width: 1600px;
   margin: 0 auto;
@@ -55,14 +62,13 @@ nav {
 }
 
 .logo {
-  margin: 25px 0 0 215px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #2196f3;
+  color: var(--brand-color);
 }
 
 .logo-dark {
@@ -75,17 +81,19 @@ nav {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  margin: 32px 0 0 93px;
+  margin: 0 0 0 93px;
   display: flex;
+  align-items: center;
 }
 
 .navigate-item {
-  color: #212121;
+  color: var(--primary-color);
   margin: 0 0 0 50px;
 }
 
-.active {
-  color: #2196f3;
+.active,
+.mail-top {
+  color: var(--brand-color);
 }
 
 .tel-mail {
@@ -94,15 +102,13 @@ nav {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  margin: 32px 0 0 330px;
+  margin: 0 0 0 330px;
+  align-items: center;
   display: flex;
 }
 
-.mail-top {
-  color: #2196f3;
-}
 .tel-top {
-  color: #757575;
+  color: var(--secondary-color);
   margin: 0 0 0 50px;
 }
 
@@ -136,7 +142,7 @@ h1 {
 .contained {
   margin: 30px 0 0 0;
   padding: 10px 32px;
-  background: #2196f3;
+  background: var(--brand-color);
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
@@ -159,7 +165,7 @@ h2 {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-color);
 }
 
 .advantages {
@@ -175,7 +181,7 @@ h2 {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--primary-color);
 }
 
 .advantages-item p {
@@ -185,7 +191,7 @@ h2 {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 
 .our-job-list {
@@ -203,7 +209,7 @@ h2 {
   background: #f5f4fa;
 }
 
-.our-team > h2 {
+.our-team h2 {
   margin: 0;
 }
 
@@ -228,7 +234,7 @@ h2 {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-color);
   margin: 30px 0 0 0;
 }
 
@@ -239,7 +245,7 @@ h2 {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
   margin: 10px 0 0 0;
 }
 
@@ -252,4 +258,20 @@ footer {
 .container-footer {
   max-width: 1600px;
   margin: 0 auto;
+  padding: 60px 215px;
+}
+
+.logo-light {
+  color: #fff;
+}
+
+address {
+  display: block;
+  margin: 20px 0 0 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
 }
