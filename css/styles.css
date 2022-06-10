@@ -19,38 +19,7 @@ a:focus,
 a:active {
   outline: none;
 }
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-input::-ms-clear {
-  display: none;
-}
-button {
-  cursor: pointer;
-}
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
+
 a,
 a:visited {
   text-decoration: none;
@@ -61,38 +30,24 @@ a:hover {
 ul li {
   list-style: none;
 }
-img {
-  vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
+
 /*--------------------*/
 
 body {
   background: #e5e5e5;
 }
 
+/* Header */
+
 header {
-  background: red;
+  background: #fff;
 }
 
 .container-header {
-  background: #2196f3;
+  background: #fff;
   max-width: 1600px;
   margin: 0 auto;
   display: flex;
-}
-
-/* Header */
-
-body {
 }
 
 nav {
@@ -108,7 +63,6 @@ nav {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #2196f3;
-  background-color: aquamarine;
 }
 
 .logo-dark {
@@ -116,19 +70,180 @@ nav {
 }
 
 .navigate {
-  margin: 0 0 0 50px;
-  background-color: #2196f3;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin: 32px 0 0 93px;
   display: flex;
+}
+
+.navigate-item {
+  color: #212121;
+  margin: 0 0 0 50px;
+}
+
+.active {
+  color: #2196f3;
 }
 
 .tel-mail {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin: 32px 0 0 330px;
   display: flex;
 }
 
+.mail-top {
+  color: #2196f3;
+}
+.tel-top {
+  color: #757575;
+  margin: 0 0 0 50px;
+}
+
+/* Main */
+
+main {
+}
+
 .container-main {
+  background: #fff;
   max-width: 1600px;
   margin: 0 auto;
 }
+
+.order-service {
+  text-align: center;
+  padding: 200px 452px;
+  background: #2f303a;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contained {
+  margin: 30px 0 0 0;
+  padding: 10px 32px;
+  background: #2196f3;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.skills {
+}
+
+h2 {
+  margin: 95px 0 0 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.advantages {
+  margin: 50px 215px 0 215px;
+  display: flex;
+}
+
+.advantages-item h3 {
+  margin: 0 0 0 30px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.advantages-item p {
+  margin: 10px 0 0 30px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.our-job-list {
+  margin: 50px 215px 0 215px;
+  display: flex;
+}
+
+.our-job-box {
+  margin: 0 30px 0 0;
+}
+
+.our-team {
+  margin: 95px 0 0 0;
+  padding: 95px 215px;
+  background: #f5f4fa;
+}
+
+.our-team > h2 {
+  margin: 0;
+}
+
+.our-team-list {
+  margin: 50px 0 0 0;
+  display: flex;
+}
+
+.team-once {
+  padding: 0 0 30px 0;
+  margin: 0 30px 0 0;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-once h3 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 30px 0 0 0;
+}
+
+.team-once p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin: 10px 0 0 0;
+}
+
+/* Footer */
 
 footer {
   background: #2f303a;
