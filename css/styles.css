@@ -31,6 +31,14 @@ ul li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
 /*--------------------*/
 
 :root {
@@ -40,7 +48,10 @@ ul li {
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto' sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
   color: var(--primary-color);
   background: #e5e5e5;
 }
@@ -81,7 +92,6 @@ nav {
 .navigate {
   font-family: 'Roboto';
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   margin: 0 0 0 43px;
@@ -93,10 +103,13 @@ nav {
   margin: 0 0 0 50px;
 }
 
+.active {
+  color: var(--brand-color);
+}
+
 .tel-mail {
   font-family: 'Roboto';
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   margin: 0 0 0 330px;
@@ -115,7 +128,12 @@ nav {
 
 .tel-top:hover,
 .mail-top:hover,
-.navigate-item:hover {
+.navigate-item:hover,
+.tel-top:focus,
+.mail-top:focus,
+.navigate-item:focus,
+.tel-mail-bottom:hover,
+.tel-mail-bottom:focus {
   color: var(--brand-color);
 }
 
@@ -184,7 +202,6 @@ h2 {
   margin: 0 0 0 30px;
   font-family: 'Roboto';
   font-weight: 700;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -194,8 +211,6 @@ h2 {
 .advantages-item p {
   margin: 10px 0 0 30px;
   font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
@@ -247,7 +262,6 @@ h2 {
 
 .team-once p {
   font-family: 'Roboto';
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -278,9 +292,8 @@ address {
 }
 
 .adress-bottom {
+  font-family: sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
@@ -289,9 +302,8 @@ address {
 .tel-mail-bottom,
 .tel-mail-bottom {
   margin: 10px 0 0 0;
+  font-family: sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
