@@ -147,9 +147,6 @@ nav {
 
 /* Main */
 
-main {
-}
-
 .container-main {
   background: #fff;
   max-width: 1600px;
@@ -158,7 +155,7 @@ main {
 
 .order-service {
   text-align: center;
-  padding: 200px 400px;
+  padding: 200px 452px;
   background: #2f303a;
 }
 
@@ -205,12 +202,15 @@ h2 {
 }
 
 .advantages {
-  margin: 50px 0 0;
+  margin: 30px 0 0;
   display: flex;
 }
 
+.advantages-item {
+  margin: 0 30px 0 0;
+}
+
 .advantages-item-title {
-  margin: 0 0 0 30px;
   font-weight: var(--bold-font);
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -219,7 +219,7 @@ h2 {
 }
 
 .advantages-item-text {
-  margin: 10px 0 0 30px;
+  margin: 10px 0 0 0px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
