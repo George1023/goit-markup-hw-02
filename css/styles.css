@@ -192,6 +192,7 @@ h1 {
 }
 
 h2 {
+  display: none;
   font-style: normal;
   font-weight: var(--bold-font);
   font-size: 36px;
@@ -211,7 +212,6 @@ h2 {
 }
 
 .advantages-item-title {
-  font-weight: var(--bold-font);
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
